@@ -509,7 +509,7 @@ const App = {
                 title: "Breath",
                 author: "Zihan Zia",
                 description: `The idea was to take a series of stills with a stationary subject, with the goal of shifting distance and shutter speed. This 
-                            film captures the anxiety of being on a busy campus, not knowing where to go and being overwhelmed by the crowds, people can feel frozen. `,
+                            film captures the anxiety of being on a busy campus, not knowing where to go and being overwhelmed by the crowds, people can feel frozen.`,
                 thumbnail: "imgs/44.png"
             },
 
