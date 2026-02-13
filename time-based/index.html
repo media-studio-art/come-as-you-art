@@ -52,6 +52,7 @@
           </v-row>
         </v-container>
 
+        <!-- students cards -->
 
         <v-dialog v-model="showDialog" style=" opacity: 0.9;" color="transparent">
           <v-card>
@@ -69,34 +70,45 @@
 
             <v-card-text>
               {{selectedProject.description}}
+
+              <!-- video -->
+              <video controls class="mt-4" width="100%" height="100%" :src="selectedProject.video">
+                Your browser does not support the video tag.
+              </video>
+              
             </v-card-text>
+            </v-text>
           </v-card>
         </v-dialog>
 
-            <!-- intro description -->
-                    <v-dialog v-model="showIntroDialog" style=" opacity: 0.9;" color="transparent">
-                        <v-card>
-                            <v-card-actions>
-                                <v-btn @click="showIntroDialog = false" icon="mdi-close-circle-outline"></v-btn>
-                            </v-card-actions>
+        <!-- intro description -->
+        <v-dialog v-model="showIntroDialog" style=" opacity: 0.9;" color="transparent">
+          <v-card>
+            <v-card-actions>
+              <v-btn @click="showIntroDialog = false" icon="mdi-close-circle-outline"></v-btn>
+            </v-card-actions>
 
-                            <v-card-title>
-                                Photo Film
-                            </v-card-title>
+            <v-card-title>
+              Photo Film
+            </v-card-title>
 
-                            <v-card-subtitle>
-                            </v-card-subtitle>
+            <v-card-subtitle>
+            </v-card-subtitle>
 
-                            <v-card-text>
-                                Through carefully curated sequences of black and white images, the students of MEDIAART 2B06 have developed a series of concise 30-second photo-films. 
-                                This project demanded extra attentiveness when considering rhythm, shape, sequencing, framing, and more– and through the creativity of 2B06, these artworks don’t disappoint.
-                              <br><br>
-                                They say a picture is worth a thousand words… and that time is money… In that case, the Media Art second years have quite the affordable stories to tell!
-                              <br><br>
-                              <strong>Click on each photo to know more about each project’s titles, authors, and creative intentions.</strong>
-                            </v-card-text>
-                        </v-card>
-                    </v-dialog>
+            <v-card-text>
+              Through carefully curated sequences of black and white images, the students of MEDIAART 2B06 have
+              developed a series of concise 30-second photo-films.
+              This project demanded extra attentiveness when considering rhythm, shape, sequencing, framing, and more–
+              and through the creativity of 2B06, these artworks don’t disappoint.
+              <br><br>
+              They say a picture is worth a thousand words… and that time is money… In that case, the Media Art second
+              years have quite the affordable stories to tell!
+              <br><br>
+              <strong>Click on each photo to know more about each project’s titles, authors, and creative
+                intentions.</strong>
+            </v-card-text>
+          </v-card>
+        </v-dialog>
 
       </v-main>
     </v-app>

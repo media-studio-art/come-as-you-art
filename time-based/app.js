@@ -5,8 +5,8 @@ const vuetify = createVuetify();
 
 const App = {
     setup() {
-                const showDialog = ref(false)
-                const showIntroDialog = ref(true)
+        const showDialog = ref(false)
+        const showIntroDialog = ref(true)
         const selectedProject = ref({}); // Holds the clicked project's data
         const projects = [
 
@@ -17,17 +17,19 @@ const App = {
                 description: `For this project we focused on taking black and white photographs. I thought it would be fun to see how many numbers I could find 
                             around campus in the amount of time we were given. My goal was to find them in places where they were single, not grouped within other 
                             numbers, and I ended up finding numbers 1 to 11 and arranged them to count down to the end of the video.`,
-                thumbnail: "imgs/33.png"
+                thumbnail: "imgs/33.png",
+                video: "videos/alaura.mp4"
             },
-            
+
             // 2
             {
                 title: "Leaving Class",
                 author: "Aliyah Muto",
                 description: `This photofilm captures students leaving classes and walking home or into MUSC. I wanted to capture 
                             the emotions of those finished with their classes, with some looking relieved and ready to chat with 
-                            friends, and others seeming reserved and ready to head home.`,           
-                thumbnail: "imgs/01.png"
+                            friends, and others seeming reserved and ready to head home.`,
+                thumbnail: "imgs/01.png",
+                video: ""
             },
 
             // 3
@@ -41,7 +43,8 @@ const App = {
                             perspective of the main character walking to where they are taking a break. The catch is 
                             that the amount of time spent on each photo is longer for the walking and transitional 
                             photographs.`,
-                thumbnail: "imgs/02.png"
+                thumbnail: "imgs/02.png",
+                video: ""
             },
 
             // 4
@@ -57,7 +60,8 @@ const App = {
                             fountains, and processes to slow down when the water is in the form of snow and puddles. The 
                             pacing along with the peaceful water sounds are meant to create and enhance the water 
                             photography story.`,
-                thumbnail: "imgs/03.png"
+                thumbnail: "imgs/03.png",
+                video: ""
             },
 
             // 5
@@ -71,7 +75,8 @@ const App = {
                             is in their own serene world. Overexposing the lighting added to the effect of serenity. 
                             It brightens the otherwise poorly lit library and isolates the subject without making the 
                             subject feel isolated.`,
-                thumbnail: "imgs/04.png"
+                thumbnail: "imgs/04.png",
+                video: ""
             },
 
 
@@ -84,7 +89,8 @@ const App = {
                             series starts with sunlight from a low angle, and the light slowly fades into darkness. 
                             I mainly choose natural elements, metal, and walls, because they are common materials on 
                             campus and create a real school feeling.`,
-                thumbnail: "imgs/05.png"
+                thumbnail: "imgs/05.png",
+                video: ""
             },
 
             // 7
@@ -99,7 +105,8 @@ const App = {
                             to birds chirping and ambient music reinforces this micronarrative and enhances the atmosphere. 
                             Ultimately, this piece exemplifi es the emptiness of man-made structure without the presence 
                             of greenery, illustrating that humanity cannot exist without it.`,
-                thumbnail: "imgs/06.png"
+                thumbnail: "imgs/06.png",
+                video: ""
             },
 
             // 8
@@ -111,7 +118,8 @@ const App = {
                             recent activity despite their emptiness. Each strong note switches to a new image, reflecting how the 
                             human eye blinks and refocuses. Combine both visual and sound together reflect on absence, and the 
                             lingering traces of everyday life.`,
-                thumbnail: "imgs/07.png"
+                thumbnail: "imgs/07.png", 
+                video:""
             },
 
             // 9
@@ -122,7 +130,8 @@ const App = {
                             of the dog blinking and looking around. Within this still forest, the dog observes mannequin like tree branches, 
                             that once held life and posture. The dog comes across a particular branch that has the texture of platinum, a boat 
                             sailing on grassy waves, and a smiling tree, observing the dog’s curiosity.`,
-                thumbnail: "imgs/08.png"
+                thumbnail: "imgs/08.png", 
+                video:""
             },
 
             // 10
@@ -137,7 +146,7 @@ const App = {
                 thumbnail: "imgs/34.png"
             },
 
-             // 11
+            // 11
             {
                 title: "Caught in Passing",
                 author: "Damian Boukhers",
@@ -146,7 +155,8 @@ const App = {
                              stillness using repetition, low light, and restrained pace, giving the subject and surroundings equal 
                              visual weight. Meaning comes gradually from spatial rhythm and subtle visual transitions rather than 
                              narrative action.`,
-                thumbnail: "imgs/09.png"
+                thumbnail: "imgs/09.png", 
+                video:""
             },
 
             // 12
@@ -157,7 +167,8 @@ const App = {
                             more distorted to showcase how hard it can be to focus on everything around us. Sometimes we can only narrow in on a goal or we move so 
                             fast the days start to blur. The music is chosen to reflect a leisurely pace contrasting the movement of the photos. A soft effect for 
                             the edited photos is chosen to keep it light and breezy compared to a more hardcore contrast to add to the effect of consistent flow.`,
-                thumbnail: "imgs/40.png"
+                thumbnail: "imgs/40.png", 
+                video:""
             },
 
             // 13
@@ -169,11 +180,12 @@ const App = {
                             hollow feeling one gets when looking at themselves for inspiration. The subject was asked to create puppet 
                             figures and the photos were taken as they slowly gave up and ran out of ideas. Gently complementing the 
                             series of photos is the sound of a damaged fluorescent capacitor repeatedly failing to turn on the light.`,
-                thumbnail: "imgs/10.png"
+                thumbnail: "imgs/10.png", 
+                video:""
             },
 
 
-             // 14
+            // 14
             {
                 title: "DON’T BLINK",
                 author: "Eniola Olawale-Yusuf",
@@ -182,7 +194,8 @@ const App = {
                             the character makes brief eye contact with their stalker which eventually leads to a confrontation after 
                             attempts to run away. The photos prompt the audience to question who the stalker might be and what is going 
                             on behind the camera.`,
-                thumbnail: "imgs/11.png"
+                thumbnail: "imgs/11.png", 
+                video:""
             },
 
             // 15
@@ -194,7 +207,8 @@ const App = {
                             nearly empty campus. The photos show campus at a time of day with a very dramatic light, at a strange temperature 
                             for the time of year, and a weird combo of a relatively high amount of water on the ground and trees, dead from 
                             the cold winter that seems not to exist in the photos taken.`,
-                thumbnail: "imgs/12.png"
+                thumbnail: "imgs/12.png", 
+                video:""
             },
 
             // 16
@@ -204,7 +218,8 @@ const App = {
                 description: `This photo film follows a simple walk across campus, documenting my partner’s movement toward a media art classroom. Along the way, 
                             I became interested in moments of stillness within motion—pauses on stairways, waiting near doors, and brief interactions with 
                             architectural spaces. observing an ordinary routine, the series suggests that quiet personal narratives can emerge from everyday environments.`,
-                thumbnail: "imgs/39.png"
+                thumbnail: "imgs/39.png", 
+                video:""
             },
 
             // 17
@@ -214,7 +229,8 @@ const App = {
                 description: `A walk around campus: the photographs show an act of noticing the details, lines, and shapes that defi ne the environment 
                             surrounding us. The changing light that arranges shadows into natural or symmetrical patterns, composing into features that 
                             create these fl eeting moments.`,
-                thumbnail: "imgs/37.png"
+                thumbnail: "imgs/37.png", 
+                video:""
             },
 
             // 18
@@ -225,7 +241,8 @@ const App = {
                             Beginning with a shot of the button to call the elevator, the film goes through each of the steps, from pressing the 
                             button, waiting for it to arrive, getting on the elevator, choosing which floor to get off on, and the doors closing 
                             behind you. The shots utilize blurred objects such as the elevator doors and hands to symbolize motion.`,
-                thumbnail: "imgs/13.png"
+                thumbnail: "imgs/13.png", 
+                video:""
             },
 
             // 19
@@ -239,7 +256,8 @@ const App = {
                             the space itself into a visual framework that both constrains and guides the body. Through monochrome imagery and stark 
                             chiaroscuro, the work cultivates a cool, restrained observational perspective, prompting viewers to slow their gaze and 
                             rediscover the subtle states and fleeting sensations often overlooked in daily passage.`,
-                thumbnail: "imgs/14.png"
+                thumbnail: "imgs/14.png", 
+                video:""
             },
 
             // 20
@@ -251,7 +269,8 @@ const App = {
                             then by objects, then visible only through reflections. Whether the shot is closeup or far away, the lack of a face makes 
                             the main character mysterious and prevents the viewer from understanding her (what is she doing? How does she feel about 
                             all this? What does she look like?).`,
-                thumbnail: "imgs/15.png"
+                thumbnail: "imgs/15.png", 
+                video:""
             },
 
             // 21
@@ -264,7 +283,8 @@ const App = {
                             people often turn to intense forms of stimulation — such as video games, drugs, or sex — immersing themselves in a kind of illusory 
                             revelry. Yet when the revelry ends, what remains is ultimately solitude and emptiness, which only pushes life further into disorder. 
                             Therefore, one must have the courage to confront pressure and break through personal limitations in order to move toward a renewed future.`,
-                thumbnail: "imgs/32.png"
+                thumbnail: "imgs/32.png", 
+                video:""
             },
 
             // 22
@@ -274,7 +294,8 @@ const App = {
                 description: `This short photo film takes you a tour to the Media Arts lab in Togo Salmon hall 202. It gives you a look into the location, 
                             history and the purpose of it. Showing the entire laboratory and what it can offer. This allows people to potentially find 
                             interest in what we do in the Media Arts Program.`,
-                thumbnail: "imgs/38.png"
+                thumbnail: "imgs/38.png", 
+                video:""
             },
 
             // 23
@@ -283,18 +304,20 @@ const App = {
                 author: "Kirsten Fortuna",
                 description: `With this video, I wanted to showcase the students at McMaster and how many travel around campus in their own bubble. 
                             Each photo showcases a different individual or group and how they choose to spend their time when not in class.`,
-                thumbnail: "imgs/16.png"
+                thumbnail: "imgs/16.png",
+                video:""
             },
 
 
-              // 24
+            // 24
             {
                 title: "Transition Into Focus",
                 author: "Maheen Shaiq",
                 description: `This photofilm observes a shift from movement to stillness as a student enters the computer lab and settles into their 
                             workspace. The sequence captures the quiet rhythm of academic life the pause at the doorway, the navigation through rows 
                             of computers, and the eventual immersion in screen light.`,
-                thumbnail: "imgs/17.png"
+                thumbnail: "imgs/17.png", 
+                video:""
             },
 
             // 25
@@ -304,11 +327,12 @@ const App = {
                 description: `People Watching is a series of photographs taken at McMaster University campus. These photographs are from the perspective 
                             of a people watcher in their day-to-day routine. The series emphasizes social interactions and small details like pieces of 
                             clothing and food that give insight into the object's life and what they value.`,
-                thumbnail: "imgs/18.png"
+                thumbnail: "imgs/18.png", 
+                video:""
             },
 
 
-              // 26
+            // 26
             {
                 title: "The Arcade",
                 author: "Marzia Sarker",
@@ -316,7 +340,8 @@ const App = {
                              moment feels quieter and more introspective, with light and contrast guiding the viewer’s attention. The film highlights 
                              the shifts between movement and stillness as Ansa plays, focusing on each game. I wanted to show how even a playful environment 
                              can also feel quiet, focused, and unexpectedly personal.`,
-                thumbnail: "imgs/19.png"
+                thumbnail: "imgs/19.png", 
+                video:""
             },
 
             // 27
@@ -328,7 +353,8 @@ const App = {
                             the beauty of the old, gothic architecture appearing on academic buildings. Therefore, the Photo Film of 
                             McMaster Built Against Time encourages audiences to become more observant of the timeless features that 
                             surround them on campus grounds.`,
-                thumbnail: "imgs/20.png"
+                thumbnail: "imgs/20.png", 
+                video:""
             },
 
             // 28
@@ -340,7 +366,8 @@ const App = {
                             posture, light, and quiet attention as the viewer pauses before the artwork. The absence of
                             colour emphasizes mood and atmosphere, highlighting how small gestures and moments of
                             reflection create a visual rhythm of calm and contemplation.`,
-                thumbnail: "imgs/21.png"
+                thumbnail: "imgs/21.png", 
+                video:""
             },
 
             // 29
@@ -350,7 +377,8 @@ const App = {
                 description: `No matter where you are, creativity and inspiration will follow. A sketchbook was used as the main subject, 
                             creating repetition, as well as transitioning from place to place to give variety. A higher contrast was
                             present in the photos to emphasize detail and the main subject.`,
-                thumbnail: "imgs/22.png"
+                thumbnail: "imgs/22.png", 
+                video:""
             },
 
             // 30
@@ -361,7 +389,8 @@ const App = {
                             alone in an empty classroom. Through subtle gestures, phone use, and moments of stillness, the work reflects 
                             quiet pauses and connections to friends back home. The narrative emerges through repetition, absence, and 
                             the temporary nature of presence within academic space.`,
-                thumbnail: "imgs/23.png"
+                thumbnail: "imgs/23.png", 
+                video:""
             },
 
             // 31
@@ -371,7 +400,8 @@ const App = {
                 description: `I collection of photos capturing the experiences of McMaster campus from end to end, showing famous landmarks 
                             of the university, and the common routes walked by its students. A beautiful representation of the common experience 
                             of McMaster.`,
-                thumbnail: "imgs/24.png"
+                thumbnail: "imgs/24.png", 
+                video:""
             },
 
             // 32
@@ -385,7 +415,8 @@ const App = {
                             focusing on shifts in light, angle, and framing, the work considers how familiar environments change when they are 
                             empty and momentarily still. The project approaches everyday movement through campus as a series of small moments, 
                             rather than a story with a defined beginning or end.`,
-                thumbnail: "imgs/25.png"
+                thumbnail: "imgs/25.png", 
+                video:""
             },
 
             // 33
@@ -396,7 +427,8 @@ const App = {
                             to go over and understand something in his notebook, but to no avail decides to go for a walk. Worried while walking 
                             he bumps into another university student who shifts his day from horrible to happiest. At the end, they learn the notes 
                             together, indicating how a small turn in life can sometimes make a great impact.`,
-                thumbnail: "imgs/26.png"
+                thumbnail: "imgs/26.png", 
+                video:""
             },
 
             // 34
@@ -408,7 +440,8 @@ const App = {
                             wind-blown trees during break times. Curiosity leads it to focus on changing shadows, light coming through branches, 
                             footsteps on pavement, and passing people. The film turns common outdoor areas into places of discovery through careful 
                             exploration and slow observation, turning every pause into a little adventure.`,
-                thumbnail: "imgs/35.png"
+                thumbnail: "imgs/35.png", 
+                video:""
             },
 
             // 35
@@ -419,17 +452,19 @@ const App = {
                             than focusing on individual stories, the work pays attention to shared movement, repetition, and quiet companionship.
                             Through shifts in distance and framing, the sequence slowly builds a sense of presence and connection. The narrative 
                             emerges from rhythm and accumulation rather than from plot.`,
-                thumbnail: "imgs/27.png"
+                thumbnail: "imgs/27.png", 
+                video:""
             },
 
-             // 36
+            // 36
             {
                 title: "The Man At The Bus Stop",
                 author: "Sydney Tran",
                 description: `This photo captures the sequences of the regular rhythm of life. Long, slow pace stops on the image as the man waits for the bus to come, 
                             a fast change of image as everyone quickly rushes over to the bus demonstrating the fast pace sequence, and the people in motion on a still 
                             image. This image helps us understand that every person is going through their own journey beyond the frame.`,
-                thumbnail: "imgs/41.png"
+                thumbnail: "imgs/41.png", 
+                video:""
             },
 
             // 37
@@ -439,7 +474,8 @@ const App = {
                 description: `My project shows MUSC and the natural flowing foot traffic it receives over a short period. I wanted to capture how 
                             walking through here, there are different moments, sometimes it is busy, or it’s feeling a bit quieter, and I was able 
                             to capture that through this photo montage assignment.`,
-                thumbnail: "imgs/36.png"
+                thumbnail: "imgs/36.png", 
+                video:""
             },
 
             // 38
@@ -451,7 +487,8 @@ const App = {
                             blurs while it moves from being discarded on a cold bench to being carried through streets and placed in a classroom before it ends up 
                             abandoned again. The sequence explores three main ideas which include how things move from place to place and how people form bonds with 
                             objects and how ordinary moments contain hidden beauty.`,
-                thumbnail: "imgs/42.png"
+                thumbnail: "imgs/42.png", 
+                video:""
             },
 
             // 39
@@ -460,7 +497,8 @@ const App = {
                 author: "Yang",
                 description: `The project focus on a series of photos of hand, doing things that people do all the time, it focus on higher contrast and vintage 
                             style, with hands sticking out from certain different angle`,
-                thumbnail: "imgs/43.png"
+                thumbnail: "imgs/43.png", 
+                video:""
             },
 
             // 40
@@ -470,7 +508,8 @@ const App = {
                 description: `This photograph captures the daily routine of students during their lunch break at the student center. Through still 
                             imagery, the work focuses on the actions of people eating in a public space. It emphasizes the recurring movements at 
                             lunchtime and the quiet flowing sense of time.`,
-                thumbnail: "imgs/28.png"
+                thumbnail: "imgs/28.png", 
+                video:""
             },
 
             // 41
@@ -479,7 +518,8 @@ const App = {
                 author: "Yumo",
                 description: `This work shows a figure moving forward in a space that feels empty and controlled. The body faces away and does 
                             not turn back. The path feels long and exposed. The fear comes from what cannot be seen behind.`,
-                thumbnail: "imgs/29.png"
+                thumbnail: "imgs/29.png", 
+                video:""
             },
 
             // 42
@@ -491,7 +531,8 @@ const App = {
                             The photographs show a variety of angles and shots that give different perspectives of the chaos and after the seeming 
                             quietness of what once was. The music helps add tension creating an atmosphere similar to approaching a boss fight in 
                             a video game.`,
-                thumbnail: "imgs/30.png"
+                thumbnail: "imgs/30.png", 
+                video:""
             },
 
             // 43
@@ -501,7 +542,8 @@ const App = {
                 description: `This photo film explores the quiet moments encountered while moving through campus on the way to class. The colorful bench 
                             contrasts with the neutral surroundings, highlighting pauses within an otherwise routine journey. By focusing on everyday spaces, 
                             the work reflects observation, repetition, and the subtle rhythm of student life.`,
-                thumbnail: "imgs/31.png"
+                thumbnail: "imgs/31.png", 
+                video:""
             },
 
             // 44
@@ -510,10 +552,11 @@ const App = {
                 author: "Zihan Zia",
                 description: `The idea was to take a series of stills with a stationary subject, with the goal of shifting distance and shutter speed. This 
                             film captures the anxiety of being on a busy campus, not knowing where to go and being overwhelmed by the crowds, people can feel frozen.`,
-                thumbnail: "imgs/44.png"
+                thumbnail: "imgs/44.png", 
+                video:""
             },
 
-            
+
         ]
 
         function toggleDialog(project) {
