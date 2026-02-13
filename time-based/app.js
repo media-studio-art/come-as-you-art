@@ -460,7 +460,7 @@ const App = {
                 author: "Yang",
                 description: `The project focus on a series of photos of hand, doing things that people do all the time, it focus on higher contrast and vintage 
                             style, with hands sticking out from certain different angle`,
-                thumbnail: "imgs/43.png"
+                thumbnail: "imgs/10.png"
             },
 
             // 40
