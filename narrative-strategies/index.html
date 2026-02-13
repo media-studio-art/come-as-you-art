@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@3.x/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.x/dist/vuetify.min.js"></script>
+    <script src="app.js" defer></script>
+
+    <title>Come As You Art</title>
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-main>
+
+                <v-sheet color="black" class="d-flex flex-row ga-4 pa-5">
+                    <v-btn icon="mdi-home" href="../index.html"></v-btn>
+                    <p>Don't be scared... the TVs have stories to tell. 👆🏼 Touch them 👆🏼, let them spill their
+                        secrets.</p>
+                </v-sheet>
+
+                <div style="position: relative; line-height: 0;">
+                    <v-btn v-for="project in projects" :key="project.title" @click="toggleDialog(project)"
+                        style="position: absolute; z-index:100;"
+                        :style="{left:project.xButton, top:project.yButton, width: project.wButton, height: project.hButton}"
+                        color="transparent"></v-btn>
+
+                    <v-dialog v-model="showDialog" style=" opacity: 0.9;" color="transparent">
+                        <v-card>
+                            <v-card-actions>
+                                <v-btn @click="showDialog = false" icon="mdi-close-circle-outline"></v-btn>
+                            </v-card-actions>
+
+                            <v-card-title>
+                                {{ selectedProject.title }}
+                            </v-card-title>
+
+                            <v-card-subtitle>
+                                <b>Author:</b> {{selectedProject.author}}
+                            </v-card-subtitle>
+
+                            <v-card-text>
+                                {{selectedProject.description}}
+                            </v-card-text>
+                        </v-card>
+                    </v-dialog>
+
+                    <!-- intro description -->
+                    <v-dialog v-model="showIntroDialog" style=" opacity: 0.9;" color="transparent">
+                        <v-card>
+                            <v-card-actions>
+                                <v-btn @click="showIntroDialog = false" icon="mdi-close-circle-outline"></v-btn>
+                            </v-card-actions>
+
+                            <v-card-title>
+                                Autobiographical Documentary
+                            </v-card-title>
+
+                            <v-card-subtitle>
+                            </v-card-subtitle>
+
+                            <v-card-text>
+                                Using a medley of analog and retro mediums, the students of MEDIAART 3I03 each bring a piece of themselves to this exhibition. Through short photo and video collages, 
+                                they explore the people, places, and memories that sculpted who they are today. 
+                                <br><br>
+                                Caught in 4K? How about CRT TV? Sample the different stories, cultures, and ideas of some of McMaster's very own Media Art third years– 
+                                through nostalgic visuals and intriguing narratives, you won’t want to miss these autobiographical short films!
+                                <br><br>
+                                <strong>Don't be scared... the TVs have stories to tell. 👆🏼 Touch them 👆🏼, let them spill their secrets.</strong>
+                            </v-card-text>
+                        </v-card>
+                    </v-dialog>
+
+                    <v-img src="web-background.png" @click="findCoordinates"></v-img>
+                </div>
+            </v-main>
+        </v-app>
+    </div>
+
+</body>
+
+</html>
