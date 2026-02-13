@@ -119,7 +119,7 @@ const App = {
                             human eye blinks and refocuses. Combine both visual and sound together reflect on absence, and the 
                             lingering traces of everyday life.`,
                 thumbnail: "imgs/07.png", 
-                video: "videos/charlotteW.mp4"
+                video: "videos/charloteW.mp4"
             },
 
             // 9
@@ -306,7 +306,7 @@ const App = {
                 description: `With this video, I wanted to showcase the students at McMaster and how many travel around campus in their own bubble. 
                             Each photo showcases a different individual or group and how they choose to spend their time when not in class.`,
                 thumbnail: "imgs/16.png",
-                video: "videos/kirsten.mp4"
+                video: "videos/kristen.mp4"
             },
 
 
