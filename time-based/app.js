@@ -456,6 +456,15 @@ const App = {
 
             // 39
             {
+                title: "hands",
+                author: "Yang",
+                description: `The project focus on a series of photos of hand, doing things that people do all the time, it focus on higher contrast and vintage 
+                            style, with hands sticking out from certain different angle`,
+                thumbnail: "imgs/28.png"
+            },
+
+            // 40
+            {
                 title: "Lunch Break",
                 author: "Yoyo Qu",
                 description: `This photograph captures the daily routine of students during their lunch break at the student center. Through still 
@@ -464,7 +473,7 @@ const App = {
                 thumbnail: "imgs/28.png"
             },
 
-            // 40
+            // 41
             {
                 title: "Don’t Look Back",
                 author: "Yumo",
@@ -473,7 +482,7 @@ const App = {
                 thumbnail: "imgs/29.png"
             },
 
-            // 41
+            // 42
             {
                 title: "No Way Home",
                 author: "Zain Mir",
@@ -485,13 +494,22 @@ const App = {
                 thumbnail: "imgs/30.png"
             },
 
-            // 42
+            // 43
             {
                 title: "Coming to Class",
                 author: "Zhehao Yang",
                 description: `This photo film explores the quiet moments encountered while moving through campus on the way to class. The colorful bench 
                             contrasts with the neutral surroundings, highlighting pauses within an otherwise routine journey. By focusing on everyday spaces, 
-                            the work reflects observation, repetition, and the subtle rhythm of student life`,
+                            the work reflects observation, repetition, and the subtle rhythm of student life.`,
+                thumbnail: "imgs/31.png"
+            },
+
+            // 44
+            {
+                title: "Breath",
+                author: "Zihan Zia",
+                description: `The idea was to take a series of stills with a stationary subject, with the goal of shifting distance and shutter speed. This 
+                            film captures the anxiety of being on a busy campus, not knowing where to go and being overwhelmed by the crowds, people can feel frozen. `,
                 thumbnail: "imgs/31.png"
             },
 
