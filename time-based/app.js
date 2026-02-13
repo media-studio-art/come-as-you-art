@@ -557,6 +557,17 @@ const App = {
                 video: "videos/zihan.mp4"
             },
 
+            // 45
+            {
+                title: "After Class",
+                author: "Eric Han",
+                description: `This photo film observes a single person walking through campus after class. By focusing on movement through stairways, the work documents 
+                            the transition from structured academic space to personal time. Close-up perspectives are used to emphasize footsteps, direction, and the 
+                            physical act of leaving.`,
+                thumbnail: "imgs/45.png", 
+                video: "videos/eric.mp4"
+            },
+
 
         ]
 
