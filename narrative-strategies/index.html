@@ -31,7 +31,7 @@
                         :style="{left:project.xButton, top:project.yButton, width: project.wButton, height: project.hButton}"
                         color="transparent"></v-btn>
 
-                    <v-dialog v-model="showDialog" style=" opacity: 0.9;" color="transparent">
+                    <v-dialog v-model="showDialog">
                         <v-card>
                             <v-card-actions>
                                 <v-btn @click="showDialog = false" icon="mdi-close-circle-outline"></v-btn>
@@ -47,7 +47,22 @@
 
                             <v-card-text>
                                 {{selectedProject.description}}
-                            </v-card-text>
+
+                            <br>
+                                <!-- video -->
+              <iframe
+  v-if="selectedProject.video"
+  class="mt-4"
+  width="70%"
+  height="400"
+  :src="selectedProject.video"
+  frameborder="0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowfullscreen>
+</iframe>
+                            
+
+                         </v-card-text>   
                         </v-card>
                     </v-dialog>
 
