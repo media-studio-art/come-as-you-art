@@ -105,7 +105,8 @@ const App = {
                 xButton: "20%",
                 yButton: "21%",
                 wButton: "37%",
-                hButton: "5%"
+                hButton: "5%",
+                video: "https://player.vimeo.com/video/1163856552?h=c2bdec6ebe"
             },
 
             // 6
